@@ -16,4 +16,13 @@
 
 
 ## Installation and launch
-    -
+    Clone repository:
+        ```bash
+        git clone https://github.com/ваш_логин/LiQuiz.git
+        cd LiQuiz
+    Install Flask:
+        pip install flask
+    lauch application:
+        python app.py
+    Open in browser:
+        http://127.0.0.1:5000
