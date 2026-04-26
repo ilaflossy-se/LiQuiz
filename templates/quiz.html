@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiQuiz – Викторина</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">✦ LiQuiziz</a>
+        <div class="header-list">
+            <a href="/" class="nav-element">Main</a>
+            <a href="#" class="nav-element">LeaderBoard</a>
+            <a href="#" class="nav-element">Log in</a>
+        </div>
+    </header>
+    <div class="timer-container">
+    <span>⏱️ Осталось времени: </span><span id="timerValue">15</span> сек.
+    </div>
+    <section class="categories" id="cardQuestion">
+        <h1 class="text-question" id="textQuestion">Загрузка...</h1>
+        <div class="answer-selections" id="answers">
+        </div>
+        <progress id="progress" value="0" max="100"></progress>
+        <button class="button" id="next" type="button">Следующий вопрос</button>
+    </section>
+    <footer>Выберите ответ и нажмите «Следующий вопрос»</footer>
+    <script src="/static/quiz_script.js"></script>
+</body>
+</html>

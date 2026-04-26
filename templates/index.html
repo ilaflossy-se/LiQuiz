@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiQuiz</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">✦ LiQuiziz</a>
+        <div class="header-list">
+            <a href="/" class="nav-element">Main</a>
+            <a href="#" class="nav-element">LeaderBoard</a>
+            <a href="#" class="nav-element">Log in</a>
+        </div>
+    </header>
+
+
+    <div class="categories">
+        <h1>Select category</h1>
+        <div class="categories-select">
+            <button class="category" id="sport" data-category="Sport"><img src="{{ url_for('static', filename='icons/sport.png') }}">Sport</button>
+            <button class="category" id="it" data-category="ComputerScience"><img src="{{ url_for('static', filename='icons/it.png') }}">Computer Science</button>
+            <button class="category" id="history" data-category="History"><img src="{{ url_for('static', filename='icons/history.png') }}">History</button>
+            <button class="category" id="geo" data-category="Geography"><img src="{{ url_for('static', filename='icons/geo.png') }}">Geography</button>
+            <button class="category" id="food" data-category="Food"><img src="{{ url_for('static', filename='icons/food.png') }}">Food</button>
+            <button class="category" id="other" data-category="Other"><img src="{{ url_for('static', filename='icons/other.png') }}">Other</button>
+        </div>
+        <button class="button" id="start" type="">Start Quiz</button>
+    </div>
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt laboriosam voluptatem ea voluptas, repellendus labore vel quia vitae! Tempora ea aspernatur laboriosam vitae possimus soluta eum ipsa quam beatae?</p>
+    </footer>
+</body>
+<script src="/static/script.js"></script>
+</html>
